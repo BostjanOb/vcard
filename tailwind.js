@@ -65,7 +65,8 @@ var colors = {
   'blue-lightest': '#eff8ff',
 
   'trafika': '#d91e18',
-  'ekipa24': '#cd0100'
+  'ekipa24': '#cd0100',
+  'salomon': '#f47321'
 }
 
 module.exports = {
@@ -666,13 +667,6 @@ module.exports = {
   */
 
   zIndex: {
-    'auto': 'auto',
-    '0': 0,
-    '10': 10,
-    '20': 20,
-    '30': 30,
-    '40': 40,
-    '50': 50,
   },
 
 
@@ -690,11 +684,6 @@ module.exports = {
   */
 
   opacity: {
-    '0': '0',
-    '25': '.25',
-    '50': '.5',
-    '75': '.75',
-    '100': '1',
   },
 
 
@@ -710,7 +699,7 @@ module.exports = {
 
   options: {
     prefix: '',
-    important: false,
+    important: true,
   },
 
 }
