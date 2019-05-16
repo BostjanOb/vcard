@@ -1,53 +1,56 @@
-@tailwind preflight;
+@tailwind base;
+@tailwind components;
+
+svg {
+	@apply fill-current stroke-current;
+}
 
 h2 {
-	@apply .my-6 .font-serif .uppercase .text-3xl .font-semibold;
+	@apply my-6 font-serif uppercase text-3xl font-semibold;
+}
+
+a {
+	@apply underline text-black;
+
+	&:hover {
+		@apply text-blue-500;
+	}
 }
 
 .ulSocial {
-	@apply .list-reset .my-6;
+	@apply my-6;
 }
 
 .aSocial {
-	@apply .text-left .text-sm .no-underline .py-2 .px-3 .bg-white .font-semibold .border .rounded .shadow .text-black;
+	@apply flex items-center text-left text-sm no-underline py-2 px-3 bg-white font-semibold border rounded shadow text-black;
 
 	&:hover {
-		@apply .bg-grey-lighter;
+		@apply bg-gray-300 text-black;
 	}
 
 	svg {
-		@apply .w-4 .h-4 .align-text-top;
-	}
-}
-
-.skill {
-	@apply .w-1/2 .p-2;
-
-	span {
-		@apply .float-right;
+		@apply w-4 h-4;
 	}
 
-	> div {
-		@apply .mt-2 .h-4 .bg-blue-lighter .rounded;
-
-		>div {
-			@apply .bg-blue .h-4 .rounded .w-9/10;
-		}
+	@screen md {
+		svg {
+			@apply mr-2;
+		}		
 	}
 }
 
 .project {
-	@apply .px-2 .mb-4;
+	@apply px-2 mb-4;
 
 	>div {
-		@apply .p-4 .shadow .rounded .border .h-full;
+		@apply p-4 shadow rounded border h-full;
 	}
 
 	a {
-		@apply .block .text-xs .no-underline .font-semibold .rounded .px-4 .py-1 .leading-normal .bg-white .border .border-blue .text-blue;
+		@apply flex items-center text-xs no-underline font-semibold rounded px-4 py-1 leading-normal bg-white border border-blue-500 text-blue-500;
 
 		&:hover {
-			@apply .bg-blue .text-white;
+			@apply bg-blue-500 text-white;
 		}
 	}
 }
